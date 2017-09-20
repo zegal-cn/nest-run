@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+/typings
 
 # IDE
 /.idea
@@ -8,6 +9,7 @@
 
 # misc
 npm-debug.log
+*/.sqlite3
 
 # example
 /quick-start
@@ -19,3 +21,4 @@ npm-debug.log
 
 # dist
 /dist
+/build
