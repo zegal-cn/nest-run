@@ -1,9 +1,7 @@
+import { Controller, Get } from "@nestjs/common";
 
-import { Controller, Get } from '@nestjs/common';
-
-@Controller('projects')
+@Controller("projects")
 export class ProjectController {
-
   @Get()
   findAll() {
     return [];

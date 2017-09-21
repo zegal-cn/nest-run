@@ -4,12 +4,10 @@ export const databaseProviders = [
   {
     provide: "DbConnectionToken",
     useFactory: async () => {
-      let connection = await createConnection({
+      const connection = await createConnection({
         type: "sqlite",
         database: "./dist/development.sqlite3",
-        entities: [
-          "./**/*.entity.ts",
-        ],
+        entities: ["./**/*.entity.ts"],
         // entitySchemas: [
         //   __dirname + "./schema/*.json",
         // ],
