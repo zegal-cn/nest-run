@@ -1,16 +1,14 @@
+import { Controller, Get } from "@nestjs/common";
 
-import { Controller, Get } from '@nestjs/common';
-
-@Controller('users')
+@Controller("users")
 export class UserController {
+  @Get()
+  findAll() {
+    return [];
+  }
 
-    @Get()
-    findAll() {
-        return [];
-    }
-
-    @Get()
-    find() {
-        return [];
-    }
+  @Get()
+  find() {
+    return [];
+  }
 }

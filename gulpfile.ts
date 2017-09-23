@@ -2,12 +2,10 @@
 // import * as gulp from 'gulp';
 
 import { Gulpclass, Task, SequenceTask, MergedTask } from "gulpclass";
-import { del } from "@types/del";
-// const gulp = require("gulp");
-const nodemon = require("gulp-nodemon");
-// const del = require("del");
-const tslint = require("gulp-tslint");
-// const stylish = require('tslint-stylish');
+import del = require("del");
+import gulp = require("gulp");
+import nodemon = require("gulp-nodemon");
+import tslint = require("gulp-tslint");
 
 @Gulpclass()
 export class Gulpfile {
@@ -43,7 +41,7 @@ export class Gulpfile {
     nodemon({
       // verbose: true,
       // restartable: 'rs',
-      colours: true,
+      // colours: true,
       script: "index.js",
       ext: "ts js json",
       // execMap: { js: 'node --harmony' },
